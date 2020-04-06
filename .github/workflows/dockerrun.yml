@@ -3,7 +3,7 @@ name: Docker run CI
 on:
   push:
     paths:
-      - './subproject2/**'
+      - 'subproject2/**'
 
 jobs:
 

@@ -3,7 +3,7 @@ name: Docker
 on:
   push:
     paths:
-      - './subproject1/**'
+      - 'subproject1/**'
 
 env:
   IMAGE_NAME: centos7perl5
