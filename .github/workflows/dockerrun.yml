@@ -2,9 +2,8 @@ name: Docker run CI
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    paths:
+      - 'subproject2/**'
 
 jobs:
 
@@ -20,7 +19,7 @@ jobs:
 
     - name: Build the Docker image
       run: |
-        docker build . --file Dockerfile2 --tag my-image-name
+        docker build ./subproject2 --file Dockerfile --tag my-image-name
         docker run my-image-name
 
 
