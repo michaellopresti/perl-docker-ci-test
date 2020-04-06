@@ -19,7 +19,8 @@ jobs:
 
     - name: Build the Docker image
       run: |
-        docker build ./subproject2 --file Dockerfile --tag my-image-name
+        cd subproject2 
+        docker build . --file Dockerfile --tag my-image-name
         docker run my-image-name
 
 
