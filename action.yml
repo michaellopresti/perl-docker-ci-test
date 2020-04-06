@@ -1,6 +1,0 @@
-# action.yml
-# name: 'Hello World'
-# description: 'Say hello world with perl5 on centos7'
-# runs:
-#   using: 'docker'
-#   image: 'Dockerfile'
